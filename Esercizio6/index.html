@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Esercizio 6</title>
+</head>
+<!---Scritto il css qui perchè il file non funzionava-->
+<style>
+    #hamnav {
+        width:100%;
+       background-color: bisque;
+        
+    }
+
+    #hamnav label,
+    #hamburger {
+        display: none;
+
+    }
+
+    .hamitems {
+        display: flex;
+        
+    }
+ a{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 2;
+        flex-basis: 0;
+        color: black;
+    }
+
+    button:hover {
+        color: white;
+        background-color: green;
+    }
+
+    /*responsive*/
+
+    @media screen and (max-width:768px) {
+        #hamitems {
+            display: block;
+        }
+
+        #hamtimes a {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #hamitems {
+            display: none;
+        }
+
+
+
+        #hamnav label {
+
+            display: inline;
+            color: black;
+            font-size: 1.2rem;
+            font-style: normal;
+            padding: 10px;
+
+        }
+    }
+</style>
+
+<body>
+    <header>
+
+        <nav id="hamnav">
+            <span>Navbar</span>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger">
+            <div id="hamitems">
+                <a href="#">Home</a>
+                <a href="#">Link</a>
+                <a href="#">Dropdown</a>
+                <a href="#">Disabled</a>
+                <input type="search" id="cerca" name="cerca" placeholder="Search" />
+                <button type="button">Search</button>
+            </div>
+
+
+
+
+
+
+        </nav>
+
+
+
+
+
+
+
+    </header>
+
+</body>
+
+</html>
