@@ -90,9 +90,3 @@ span {
   cursor: pointer;
 
 }
-@media (man-width: 480px){
-  .container {width: 100%; flex-direction: column;}
-}
-@media (max-width: 768px){
-  .container {width: 100%; }
-}
